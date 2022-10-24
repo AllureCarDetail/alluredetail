@@ -5,6 +5,9 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 function add_footer_text() {
-    const footer = document.getElementById('footer')
-    footer.innerHTML = 'This is a footer'
+    const footer = document.querySelector('#footer-copyright')
+    let current_year = new Date().getFullYear()
+    footer.textContent = `© ${current_year} Allure Car Detail`
 }
+
+add_footer_text()
