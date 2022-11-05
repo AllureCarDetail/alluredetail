@@ -10,4 +10,4 @@ function add_footer_text() {
     footer.textContent = `© ${current_year} Allure Car Detail`
 }
 
-add_footer_text()
+// add_footer_text()
