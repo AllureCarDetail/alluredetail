@@ -57,7 +57,22 @@ body nav, .marcellus {
     cursor: pointer;
 }
 
+.imgcontainer .centered:hover{
+    color: white;
+    background-color: black;
+    animation: pulse 1s infinite;
+    transition: 0.5s;
+}
+
+.imgcontainer .centered:active{
+    color: white;
+    background-color: black;
+    font-size: 1.6em;
+    transition: 0.1s;
+}
+
 .main-col-btn:hover img{
     filter: opacity(80%);
     transition: 0.5s;
 }
+

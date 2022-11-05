@@ -48,11 +48,11 @@
 <!-- img/int.jpg -->
 <!-- img/packs.jpg -->
 <div class="row m-0 p-0">
-    <div class="imgcontainer main-col-btn col-12 col-md-4 m-0 p-0">
+    <a href="#exterior" class="imgcontainer main-col-btn col-12 col-md-4 m-0 p-0">
         <img src="img/ext.jpeg" class="img-fluid" alt="Responsive image">
         <!-- text button on top of img -->
         <div class="centered">Exterior</div>
-    </div>
+    </a>
     <div class="imgcontainer main-col-btn  col-12 col-md-4 m-0 p-0">
         <img src="img/int.jpg" class="img-fluid" alt="Responsive image">
         <div class="centered">Interior</div>
@@ -65,46 +65,108 @@
     </div>
 </div>
 
+<!-- text with background parallax image -->
+<style>
+    .parallax{
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/10410092/pexels-photo-10410092.jpeg");
+    /* Set a specific height */
+    min-height: 500px;
 
-    <div class="container py-4 px-3 mx-auto">
-        <!-- boostrap nav with just a title -->
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        <div id="servicios" class="row">
-            <h3 class="text-center">Productos</h3>
-            <div class="col-md-4 hover-glare">
-                <div class="card bg-dark rad-2 ">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-secondary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 hover-glare">
-                <div class="card bg-dark rad-2 ">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-secondary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 hover-glare">
-                <div class="card bg-dark rad-2 ">
-                    <div class="card-body">
-                        <h5 class="card-title ">Servicio 3</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-secondary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <!-- lorem ipsum -->
-            </div>
+.parallax-text{
+    color: white;
+    /* use right half of the screen on desktop */
+    width: 50%;
+    margin-right: 0 !important;
+    padding: 20px;
+    background-color: black;
+    opacity: 0.9;
+    
+}
+@media only screen and (max-width: 800px) {
+    .parallax-text{
+        width: 100%;
+    }
+}
+
+
+
+
+</style>
+<div class="">
+
+    <div id="parallax-container" class="parallax d-flex flex-row justify-content-end">
+        <div class="parallax-text">
+            <h1>ALLURE CAR DETAIL</h1>
+            <p>Desde que se fundó Allure Car Detail, se le ha reconocido por sus servicios de alta calidad, su eficiencia excepcional y
+            un gran nivel de profesionadad. Independientemente del servicio que busque, le garantizamos que no sólo cumpliremos con
+            lo acordado, sino que también superaremos sus expectativas y aseguraremos su plena satisfacción.
+            
+            ​
+            
+            Ofrecemos la garantía y la seguridad de tener los mejores resultados del mercado desde la comodidad de su domicilio, sin
+            necesidad de hacer desplazamientos ni dejar su vehículo en manos ajenas durante horas. Además, con nuestra limpieza con
+            espuma a presión y nuestro innovador método de secado sin contacto evitará accidentes que se dan al realizar limpiezas
+            en seco.
+            
+            
+            
+            Con los mejores agentes de limpieza posibles y la maquinaria más avanzada le ofrecemos la sensación de estrenar coche
+            con cada lavado.
+            
+            
+            
+            No somos una empresa que simplemente limpia coches, AllureCarDetail significa limpieza, protección, cuidado, calidad,
+            dedicación, confianza y seguridad.
         </div>
     </div>
+</div>
+
+<div id="productos">
+    <div class="row m-0 p-0 text-black bg-white">
+        <div class="col-12 col-md-4 m-0 p-0" id="exterior">
+            <div class="card">
+                <img src="img/ext.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LIMPIEZA EXTERIOR PREMIUM</h5>
+                    <p class="card-text">Limpieza de todo el vehículo llevada a cabo en tres pasos (prelavado, lavado manual y secado sin contacto). Realizada con el mayor cuidado y los mejores agentes de limpieza del mercado para dotar a su vehículo de los mejores resultados. Nuestro lavado minimiza el riesgo de crear swirls (pequeñas marcas en la capa más superficial del vehículo) o micro arañazos gracias al secado sin contacto con aire filtrado a presión. Este servicio aumenta el brillo y la profundidad de las líneas naturales del vehículo gracias a la nanotecnología aplicada por medio de nuestro lavado, aportando además gran repelencia al agua hasta 3 meses que ayuda a mantener su coche limpio y protegido durante más tiempo.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 m-0 p-0">
+            <div class="card p-3">
+                <img src="img/ext.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ASPIRADO PROFESIONAL INTEGRAL</h5>
+                    <p class="card-text">Realizamos un aspirado completo en
+                    profundidad de todo el interior del vehículo (incluyendo asientos, maletero, alfombrillas,
+                    moqueta, salpicadero y todos los elementos del interior). Se vaciará el vehículo por completo
+                    y se retirarán las alfombrillas para poder lograr la eliminación del polvo y los residuos sólidos de la manera más 
+                    profesional y eficiente para devolver a su vehículo el mejor aspecto.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div><div class="col-12 col-md-4 m-0 p-0">
+            <div class="card p-3">
+                <img src="img/ext.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Exterior</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+</div>
+    
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
