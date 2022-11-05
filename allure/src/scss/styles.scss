@@ -20,8 +20,44 @@ body nav, .marcellus {
     object-fit: cover;
     z-index: 1;
 }
-.landing-fotos{
-    max-height: 18em;
+
+.main-col-btn.col-md-4 {
+    max-height: 25em;
     overflow: hidden;
 }
 
+.main-col-btn img{
+    object-fit: fill;
+    /* align image vertically to the center */
+    vertical-align: middle;
+    object-position: center;
+    /* make image responsive */
+    width: 100%;
+    height: auto;
+}
+.imgcontainer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imgcontainer .centered{
+    position: absolute;
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.4em 2em;
+    color:black;
+    background-color: white;
+    opacity: 1;
+    border: 0.2em solid black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main-col-btn:hover img{
+    filter: opacity(80%);
+    transition: 0.5s;
+}
