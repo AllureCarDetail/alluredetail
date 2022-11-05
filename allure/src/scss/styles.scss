@@ -148,3 +148,14 @@ body nav, .marcellus {
 .bg-beiger{
     background-color: rgb(189, 189, 170);
 }
+.titulo-categoria{
+    font-family: 'Roboto Flex';
+    font-weight: bolder;
+    opacity: 0.9;
+}
+
+.titulo-categoria::after{
+    height: 1px;
+    width: 10em;
+    
+}
