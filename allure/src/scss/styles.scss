@@ -111,7 +111,9 @@ body nav, .marcellus {
         width: 100%;
     }
 }
-
+.pointer, .cursor-pointer{
+    cursor: pointer;
+}
 
 .round{
     border-radius: 2em;
@@ -158,4 +160,27 @@ body nav, .marcellus {
     height: 1px;
     width: 10em;
     
+}
+
+.old-price{
+    font-size:0.9em;
+    opacity: 70%;
+    text-decoration: line-through;
+}
+
+.new-price{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.prices-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.table-row-separator{
+    border-bottom: 1px solid rgb(189, 189, 170);
 }
